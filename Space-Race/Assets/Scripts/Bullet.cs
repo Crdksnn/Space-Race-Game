@@ -9,17 +9,15 @@ public class Bullet : MonoBehaviour
 {
     private float speed;
     private Vector3 direction;
-    [SerializeField] private Transform player;
+    private Transform player;
     
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player1").transform;
     }
     
     void Update()
     {
-        
-        Debug.Log(player.position);
         
         float distance = Vector3.Distance(player.position, transform.position);
         if(distance <= .45f)
