@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UIElements;
@@ -8,14 +9,22 @@ public class Bullet : MonoBehaviour
 {
     private float speed;
     private Vector3 direction;
+    [SerializeField] private Transform player;
+    
     void Start()
     {
         
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
+        
+        Debug.Log(player.position);
+        
+        float distance = Vector3.Distance(player.position, transform.position);
+        if(distance <= .45f)
+            Destroy(gameObject);
+        
         transform.position += speed * direction * Time.deltaTime;
     }
 

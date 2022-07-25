@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletSpawnerLeft : MonoBehaviour
+public class BulletSpawner : MonoBehaviour
 {
 
     [SerializeField] private GameObject bulletPrefab;
@@ -14,7 +14,7 @@ public class BulletSpawnerLeft : MonoBehaviour
     private float bulletSpawnWaitTime;
     void Start()
     {
-        bulletSpawnWaitTime = bulletSpawnTime;
+        bulletSpawnWaitTime = 0;
     }
 
     
