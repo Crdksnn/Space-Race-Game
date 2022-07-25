@@ -13,15 +13,19 @@ public class Bullet : MonoBehaviour
     
     void Start()
     {
-        player = GameObject.FindWithTag("Player1").transform;
+        if(GameObject.FindWithTag("Player1"))
+            player = GameObject.FindWithTag("Player1").transform;
     }
     
     void Update()
     {
-        
-        float distance = Vector3.Distance(player.position, transform.position);
-        if(distance <= .45f)
-            Destroy(gameObject);
+
+        if (player != null)
+        {
+            float distance = Vector3.Distance(player.position, transform.position);
+            if(distance <= .45f)
+                Destroy(player.gameObject);
+        }
         
         transform.position += speed * direction * Time.deltaTime;
     }
