@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Player1Settings : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private TextMeshProUGUI player1ScoreText;
@@ -44,9 +44,11 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private void RePosition()
+    public void RePosition()
     {
-        isFinsihed = false;
+        if(isFinsihed)
+            isFinsihed = false;
+        
         transform.position = startPosition;
     }
     
