@@ -14,7 +14,7 @@ public class BulletSpawner : MonoBehaviour
     private float bulletSpawnWaitTime;
     void Start()
     {
-        bulletSpawnWaitTime = 0;
+        bulletSpawnWaitTime = Random.Range(0,bulletSpawnTime);
     }
 
     
@@ -28,7 +28,7 @@ public class BulletSpawner : MonoBehaviour
             
             bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             bullet.GetComponent<Bullet>().BulltetProperties(bulletSpeed, direction);
-            bulletSpawnWaitTime = bulletSpawnTime;
+            bulletSpawnWaitTime = Random.Range(0,bulletSpawnTime);
         }
         
     }

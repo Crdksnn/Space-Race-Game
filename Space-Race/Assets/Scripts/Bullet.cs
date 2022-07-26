@@ -10,11 +10,13 @@ public class Bullet : MonoBehaviour
     private float speed;
     private Vector3 direction;
     private Transform player;
+
+    private static string Player1 = "Player1";
     
     void Start()
     {
-        if(GameObject.FindWithTag("Player1"))
-            player = GameObject.FindWithTag("Player1").transform;
+        if(GameObject.FindWithTag(Player1))
+            player = GameObject.FindWithTag(Player1).transform;
     }
     
     void Update()
@@ -23,7 +25,7 @@ public class Bullet : MonoBehaviour
         if (player != null)
         {
             float distance = Vector3.Distance(player.position, transform.position);
-            if(distance <= .45f)
+            if(distance <= .35f)
                 Destroy(player.gameObject);
         }
         
