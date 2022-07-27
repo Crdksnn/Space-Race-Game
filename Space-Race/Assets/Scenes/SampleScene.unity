@@ -169,8 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: 1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: 1, y: 0}
 --- !u!1 &27610500
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,8 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: -1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: -1, y: 0}
 --- !u!1 &64496645
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,8 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: 1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: 1, y: 0}
 --- !u!1 &142043092
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,8 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: 1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: 1, y: 0}
 --- !u!1 &233845827
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,8 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: -1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: -1, y: 0}
 --- !u!1 &321485160
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +369,7 @@ GameObject:
   - component: {fileID: 321485162}
   - component: {fileID: 321485161}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: FPS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -454,8 +449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: -1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: -1, y: 0}
 --- !u!1 &360834632
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,8 +496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: 1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: 1, y: 0}
 --- !u!1 &434084503
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,8 +543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: -1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: -1, y: 0}
 --- !u!1 &450316107
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,8 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: 1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: 1, y: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,8 +721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: -1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: -1, y: 0}
 --- !u!1 &683315351
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,8 +768,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: -1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: -1, y: 0}
+--- !u!1001 &738111057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4882783302239224274, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687364417708457724, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
 --- !u!1 &765877320
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,8 +979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: 1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: 1, y: 0}
 --- !u!1 &854930312
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,8 +1026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: 1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: 1, y: 0}
 --- !u!1 &1023977554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,8 +1208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: -1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: -1, y: 0}
 --- !u!1 &1210828983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,8 +1255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: 1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: 1, y: 0}
 --- !u!1 &1321163285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,8 +1502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2805085628972666679, guid: e56cf00c3df7f2c4784ad54d92727b59, type: 3}
   bulletSpawnTime: 3
-  direction: {x: -1, y: 0, z: 0}
-  bulletSpeed: 10000
+  direction: {x: -1, y: 0}
 --- !u!1 &1814667834
 GameObject:
   m_ObjectHideFlags: 0
