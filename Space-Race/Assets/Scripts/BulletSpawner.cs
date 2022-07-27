@@ -7,8 +7,7 @@ public class BulletSpawner : MonoBehaviour
 
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletSpawnTime;
-    [SerializeField] private Vector3 direction;
-    [SerializeField] private float bulletSpeed;
+    [SerializeField] private Vector2 direction;
 
     private GameObject bullet;
     private float bulletSpawnWaitTime;
@@ -27,7 +26,7 @@ public class BulletSpawner : MonoBehaviour
         {
             
             bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Bullet>().BulletProperties(bulletSpeed, direction);
+            bullet.GetComponent<Bullet>().BulletDirection(direction);
             bulletSpawnWaitTime = Random.Range(0,bulletSpawnTime);
         }
         

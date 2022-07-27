@@ -29,7 +29,7 @@ public class Player1Settings : MonoBehaviour
             transform.position += Vector3.up * moveSpeed * Time.deltaTime;
         
         if(Input.GetKey(KeyCode.S))
-            transform.position += Vector3.down * moveSpeed * Time.deltaTime;
+            transform.position -= Vector3.up * moveSpeed * Time.deltaTime;
         
     }
 
