@@ -17,11 +17,11 @@ public class Bullet : MonoBehaviour
     private static string Player1 = "Player1";
     private static string Player2 = "Player2";
 
-    //Player Boundries
-    private Vector2 leftUp = Vector2.zero;
-    private Vector2 leftDown = Vector2.zero;
-    private Vector2 rightUp = Vector2.zero;
-    private Vector2 rightDown = Vector2.zero;
+    //Player1 Boundries
+    private Vector2 player1LeftUp = Vector2.zero;
+    private Vector2 player1LeftDown = Vector2.zero;
+    private Vector2 player1RightUp = Vector2.zero;
+    private Vector2 player1RightDown = Vector2.zero;
 
     private List<Vector2> player1Bounds = new List<Vector2>();
 
@@ -79,31 +79,31 @@ public class Bullet : MonoBehaviour
     
     private void Player1Boundries()
     {
-        leftUp.x = player1.transform.position.x - player1.localScale.x / 2;
-        leftUp.y = player1.transform.position.y + player1.localScale.y / 2;
+        player1LeftUp.x = player1.transform.position.x - player1.localScale.x / 2;
+        player1LeftUp.y = player1.transform.position.y + player1.localScale.y / 2;
 
-        leftDown.x = player1.transform.position.x - player1.localScale.x / 2;
-        leftDown.y = player1.transform.position.y - player1.localScale.y / 2;
+        player1LeftDown.x = player1.transform.position.x - player1.localScale.x / 2;
+        player1LeftDown.y = player1.transform.position.y - player1.localScale.y / 2;
 
-        rightUp.x = player1.transform.position.x + player1.localScale.x / 2;
-        rightUp.y = player1.transform.position.y + player1.localScale.y / 2;
+        player1RightUp.x = player1.transform.position.x + player1.localScale.x / 2;
+        player1RightUp.y = player1.transform.position.y + player1.localScale.y / 2;
 
-        rightDown.x = player1.transform.position.x + player1.localScale.x / 2;
-        rightDown.y = player1.transform.position.y - player1.localScale.y / 2;
+        player1RightDown.x = player1.transform.position.x + player1.localScale.x / 2;
+        player1RightDown.y = player1.transform.position.y - player1.localScale.y / 2;
         
-        Debug.DrawLine(leftUp,leftDown,Color.blue);
-        Debug.DrawLine(rightUp,rightDown,Color.blue);
-        Debug.DrawLine(leftUp,rightUp,Color.blue);
-        Debug.DrawLine(leftDown,rightDown,Color.blue);
+        Debug.DrawLine(player1LeftUp,player1LeftDown,Color.blue);
+        Debug.DrawLine(player1RightUp,player1RightDown,Color.blue);
+        Debug.DrawLine(player1LeftUp,player1RightUp,Color.blue);
+        Debug.DrawLine(player1LeftDown,player1RightDown,Color.blue);
         
-        player1Bounds.Add(leftUp);
-        player1Bounds.Add(leftDown);
-        player1Bounds.Add(rightUp);
-        player1Bounds.Add(rightDown);
-        player1Bounds.Add(leftUp);
-        player1Bounds.Add(rightUp);
-        player1Bounds.Add(leftDown);
-        player1Bounds.Add(rightDown);
+        player1Bounds.Add(player1LeftUp);
+        player1Bounds.Add(player1LeftDown);
+        player1Bounds.Add(player1RightUp);
+        player1Bounds.Add(player1RightDown);
+        player1Bounds.Add(player1LeftUp);
+        player1Bounds.Add(player1RightUp);
+        player1Bounds.Add(player1LeftDown);
+        player1Bounds.Add(player1RightDown);
     }
 
     public void BulletDirection(Vector3 direction)
