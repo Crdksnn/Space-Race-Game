@@ -27,9 +27,15 @@ public class Player1Settings : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.W))
             transform.position += Vector3.up * moveSpeed * Time.deltaTime;
-        
-        if(Input.GetKey(KeyCode.S))
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            if (transform.position.y <= startPosition.y)
+                transform.position = startPosition;
+            
             transform.position -= Vector3.up * moveSpeed * Time.deltaTime;
+        }
+            
         
     }
 

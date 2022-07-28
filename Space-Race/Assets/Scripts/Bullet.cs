@@ -43,13 +43,16 @@ public class Bullet : MonoBehaviour
         var movement = direction * speed * Time.deltaTime;
         var newPos = pos + movement;
         
-        Debug.DrawLine(transform.position,newPos,Color.red);
+        Debug.DrawLine(transform.position + new Vector3((transform.localScale.x / 2) * MathF.Sign(direction.x), 0,0),newPos,Color.red);
         
         if (FindIntersect(pos, pos + movement))
         {
             player1.GetComponent<Player1Settings>().RePosition();
             Destroy(gameObject);
         }
+        
+        if(gameObject != null)
+            Destroy(gameObject,5f);
         
         transform.position = newPos;
         
@@ -91,6 +94,7 @@ public class Bullet : MonoBehaviour
         Debug.DrawLine(leftUp,leftDown,Color.blue);
         Debug.DrawLine(rightUp,rightDown,Color.blue);
         Debug.DrawLine(leftUp,rightUp,Color.blue);
+        Debug.DrawLine(leftDown,rightDown,Color.blue);
         
         player1Bounds.Add(leftUp);
         player1Bounds.Add(leftDown);
@@ -98,7 +102,8 @@ public class Bullet : MonoBehaviour
         player1Bounds.Add(rightDown);
         player1Bounds.Add(leftUp);
         player1Bounds.Add(rightUp);
-        
+        player1Bounds.Add(leftDown);
+        player1Bounds.Add(rightDown);
     }
 
     public void BulletDirection(Vector3 direction)
