@@ -96,12 +96,19 @@ public class Bullet : MonoBehaviour
         Debug.DrawLine(player1LeftUp,player1RightUp,Color.blue);
         Debug.DrawLine(player1LeftDown,player1RightDown,Color.blue);
         
+        //Left Boundry
         player1Bounds.Add(player1LeftUp);
         player1Bounds.Add(player1LeftDown);
+        
+        //Right Boundry
         player1Bounds.Add(player1RightUp);
         player1Bounds.Add(player1RightDown);
+        
+        //Top Boundry
         player1Bounds.Add(player1LeftUp);
         player1Bounds.Add(player1RightUp);
+        
+        //Bottom Boundry
         player1Bounds.Add(player1LeftDown);
         player1Bounds.Add(player1RightDown);
     }

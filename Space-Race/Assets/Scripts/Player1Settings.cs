@@ -7,6 +7,7 @@ public class Player1Settings : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private TextMeshProUGUI player1ScoreText;
+    [SerializeField] private float topBoundry;
     private static int player1Score;
     private bool isFinsihed = false;
     private Vector3 startPosition;
@@ -41,7 +42,7 @@ public class Player1Settings : MonoBehaviour
 
     private void FinishLine()
     {
-        if (10.2 <= transform.position.y && !isFinsihed)
+        if (topBoundry <= transform.position.y && !isFinsihed)
         {
             player1Score++;
             player1ScoreText.text = player1Score.ToString();

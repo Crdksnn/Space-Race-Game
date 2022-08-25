@@ -866,6 +866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   player1ScoreText: {fileID: 1875832638}
+  topBoundry: 10.2
 --- !u!212 &765877322
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1804,6 +1805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   player2ScoreText: {fileID: 1023977556}
+  topBoundry: 10.2
 --- !u!1 &2130348705
 GameObject:
   m_ObjectHideFlags: 0
